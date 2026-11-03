@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rotary · BOT Chain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="logo-mark">↻</div>
+    <div>
+      <h1 id="appName">Rotary</h1>
+      <p id="tagline">Save together: everyone pays in, one member takes the pot each round.</p>
+    </div>
+  </div>
+  <div class="wallet">
+    <span id="netBadge" class="badge">Not connected</span>
+    <button id="connectBtn" class="btn primary" type="button">Connect wallet</button>
+  </div>
+</header>
+<main>
+  <section class="stats" id="stats" aria-label="Live numbers"></section>
+  <div class="panels">
+    <div>
+      <p class="sec">Actions</p>
+      <section class="grid" id="actions"></section>
+    </div>
+    <div>
+      <p class="sec">Lookups</p>
+      <section class="grid" id="views"></section>
+    </div>
+  </div>
+  <section class="card" id="tokens"></section>
+</main>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+<footer class="foot">
+  <span>BOT Chain Testnet · Chain ID 968</span>
+  <nav>
+    <a class="footlink" href="https://botchain.ai" target="_blank" rel="noopener">botchain.ai</a>
+    <a class="footlink" href="https://scan.botchain.ai" target="_blank" rel="noopener">Explorer</a>
+  </nav>
+</footer>
+<script src="lib/ethers.umd.min.js"></script>
+<script src="config.js"></script>
+<script src="artifacts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
